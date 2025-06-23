@@ -57,15 +57,19 @@
         .logo-icon {
             width: 40px;
             height: 40px;
-            background: linear-gradient(45deg, #667eea, #764ba2);
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 1.2rem;
+            overflow: hidden;
         }
+
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
 
         .nav-links {
             display: flex;
@@ -322,9 +326,12 @@
     <header>
         <nav class="container">
             <a href="#" class="logo">
-                <div class="logo-icon">RL</div>
-                Research Lab
+                <div class="logo-icon">
+                    <img src="images/mind_the_brain.png" alt="Research Lab Logo">
+                </div>
+                Mind The Brain
             </a>
+
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -339,7 +346,7 @@
         <section id="home" class="hero">
             <h1>Advancing Scientific Knowledge</h1>
             <p>Leading cutting-edge research in [Your Research Field] with innovative approaches and collaborative excellence</p>
-            <a href="mailto:lab-email@university.edu" class="cta-button">Contact Us</a>
+            <a href="mailto:fmri@unimore.it" class="cta-button">Contact Us</a>
         </section>
 
         <section id="about" class="section">
@@ -420,7 +427,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 [Lab Name]. All rights reserved. | Contact: <a href="mailto:lab-email@university.edu" style="color: white; text-decoration: underline;">lab-email@university.edu</a></p>
+            <p>&copy; 2025 [Lab Name]. All rights reserved. | Contact: <a href="mailto:fmri@unimore.it" style="color: white; text-decoration: underline;">fmri@unimore.it</a></p>
         </div>
     </footer>
 
